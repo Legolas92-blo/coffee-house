@@ -44,13 +44,17 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .container {
 	width: 1360px;
+	padding: 0 40px;
+	box-sizing: content-box;
 	margin: 0 auto;
 }
 
+.main {
+}
 /*--------------------header--------------------------*/
 
 .header {
-	
+	margin-bottom: -7%;
 }
 
 .header__wrapper {
@@ -82,38 +86,58 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .menu__link {
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*----------------coffee-roasters---------------------*/
-.main {
-}
+
 .coffee-roasters {
+	
 }
-.container {
+
+.coffee-roasters__container {
+	background: url(img/background/the-coffee-roasters.jpg) 29% 0  no-repeat;
+	background-size: cover;
 }
+
 .coffee-roasters__wrapper {
+	max-width: 962px;
+	margin: 0 auto;
+	padding: 287px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+	color: #FFFFFF;
 }
 .coffee-roasters__logo {
 }
 .coffee-roasters__img {
 }
 .coffee-roasters__title {
+	font-weight: 700;
+	font-size: 96px;
+	line-height: 96px;
 }
 .coffee-roasters__text {
+	margin-bottom: 26px;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	
 }
 .coffee-roasters__link {
+	min-width: 215px;
+	min-height: 48px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 48px;
+	text-align: center;
+	text-transform: uppercase;
+	border: 1px solid #FFFFFF;;
 }
