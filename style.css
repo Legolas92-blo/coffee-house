@@ -76,7 +76,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	display: flex;
 	justify-content: flex-start;
 	gap: 41px;
-	/* color: #FFF; */
+	color: #FFF;
 	font-size: 16px;
 	line-height: 24px;
 }
@@ -89,7 +89,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*----------------coffee-roasters---------------------*/
 
 .coffee-roasters {
-	
 }
 
 .coffee-roasters__container {
@@ -100,7 +99,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .coffee-roasters__wrapper {
 	max-width: 962px;
 	margin: 0 auto;
-	padding: 287px 0;
+	padding: 288px 0 273px 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -118,7 +117,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	line-height: 96px;
 }
 .coffee-roasters__text {
-	margin-bottom: 26px;
+	margin-bottom: 24px;
 	font-weight: 400;
 	font-size: 32px;
 	line-height: 40px;
@@ -129,8 +128,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	
 }
 .coffee-roasters__link {
-	min-width: 215px;
-	min-height: 48px;
+	width: 215px;
+	height: 48px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -140,4 +139,115 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	text-align: center;
 	text-transform: uppercase;
 	border: 1px solid #FFFFFF;;
+}
+
+/*-------------product-features--------------*/
+
+.product-features {
+}
+.product-features__container {
+	padding: 144px 0;
+	background: url(/img/background/product_features.jpg) center no-repeat;
+	background-size: cover;
+	
+}
+.product-features__items {
+	display: grid;
+	grid-template-areas: 
+		"one four"
+		"two five"
+		"three six";
+		row-gap: 48px;
+		column-gap: 176px;
+		justify-items: center;
+}
+.product-features__item:nth-child(1) {
+	grid-area: one;
+}
+.product-features__item:nth-child(2) {
+	grid-area: two;
+}
+.product-features__item:nth-child(3) {
+	grid-area: three;
+}
+.product-features__item:nth-child(4) {
+	grid-area: four;
+}
+.product-features__item:nth-child(5) {
+	grid-area: five;
+}
+.product-features__item:nth-child(6) {
+	grid-area: six;
+}
+.product-features__item {
+	max-height: 72px;
+	display: grid;
+	column-gap: 16px;
+}
+.product-features__item_icon-after{
+	width: 352px;
+	grid-template-columns: 272px 1fr;
+	grid-template-areas: 
+		"title icon"
+		"text icon"; 
+		text-align: right;
+}
+
+
+.product-features__title {
+	grid-area: title;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 1.5;
+	
+}
+.product-features__text {
+	grid-area: text;
+	font-size: 12px;
+	line-height: 2;
+}
+
+
+.product-features__item_icon-after:after {
+	content: '';
+	background-size: 100%;
+	grid-area: icon;
+	width: 64px;
+	height: 64px;
+}
+.product-features__item_icon-after:nth-child(1)::after {
+	background: url(img/icon/product-features/indoor_seating.svg) 0 0 no-repeat;
+}
+.product-features__item_icon-after:nth-child(2)::after {
+	background: url(img/icon/product-features/pet_friendly.svg) 0 0 no-repeat;
+}
+.product-features__item_icon-after:nth-child(3)::after {
+	background: url(img/icon/product-features/take_away.svg) 0 0 no-repeat;
+}
+
+.product-features__item_icon-before {
+	width: 352px;
+	grid-template-columns: 64px 1fr;
+	grid-template-areas: 
+		"icon title"
+		"icon text"; 
+}
+.product-features__item_icon-before:before {
+	content: '';
+	background-size: 100%;
+	grid-area: icon;
+	width: 64px;
+	height: 64px;
+}
+
+.product-features__item_icon-before:nth-child(4)::before {
+	background: url(img/icon/product-features/wheelchair_accessible.svg) 0 0 no-repeat;
+}
+
+.product-features__item_icon-before:nth-child(5)::before {
+	background: url(img/icon/product-features//vegan_options.svg) 0 0 no-repeat;
+}
+
+.product-features__item_icon-before:nth-child(6)::before {
+	background: url(img/icon/product-features/cyclist_friendly.svg) 0 0 no-repeat;
 }
