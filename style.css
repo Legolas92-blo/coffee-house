@@ -285,15 +285,19 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	border: 1px solid #FFFFFF;
 }
 
-/*----------------duplicate-block--------------------*/
+/*----------------duplicate__block--------------------*/
+
 .duplicate__block {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	gap: 24px;
 }
-.duplicate__block__white-font {
+.duplicate__block_white-font {
 	color: #FFFFFF;
+}
+.duplicate__block_black-font {
+	color: #000;
 }
 
 .duplicate__block__title {
@@ -301,10 +305,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	font-size: 40px;
 	line-height: 48px;
 }
-.duplicate__block__decorate {
+.duplicate__block_decorate-white {
 	margin: 0 auto;
 	width: 189px;
 	border: 1px solid #FFFFFF;
+}
+
+.duplicate__block_decorate-gray {
+	margin: 0 auto;
+	width: 189px;
+	border: 1px solid #444444;
 }
 .duplicate__block__text {
 	margin: 0 auto;
@@ -312,3 +322,111 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	font-size: 16px;
 	line-height: 24px;
 }
+
+/*----------------explore-menu--------------*/
+
+.explore__menu {
+	
+
+}
+.explore__menu__container {
+	padding: 96px 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+}
+.explore__menu__wrap {
+	max-width: 1118px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+.explore__menu__titles {
+	margin-bottom: 38px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+}
+.explore__menu__choice {
+	font-size: 16px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+.explore__menu__items {
+	padding: 10px;
+	display: grid;
+	column-gap: 30px;
+	row-gap: 24px;
+	grid-template-columns: repeat(2, 1fr);
+}
+.explore__menu__item {
+	min-width: 544px;
+	max-height: 72px;
+	display: grid;
+	grid-template-columns: 93px 1fr 40px;
+	grid-template-areas: 
+		"menu-icon menu-title price"
+		"menu-icon menu-text menu-text ";
+	align-items: start;
+}
+
+
+.explore__menu__item::before {
+	content: '';
+	width: 72px;
+	height: 72px;
+	grid-area: menu-icon;
+	
+}
+
+.explore__menu__item:nth-child(1):before {
+	background: url(img/menu/prufrock-breakfast-bun.png) 0 0 no-repeat;
+}
+.explore__menu__item:nth-child(2):before {
+	background: url(img/menu/mushrooms.png) 0 0 no-repeat;
+}
+.explore__menu__item:nth-child(3):before {
+	background: url(img/menu/bircher-muesli.png) 0 0 no-repeat;
+}
+.explore__menu__item:nth-child(4):before {
+	background: url(img/menu/tomatoes-on-toast.png) 0 0 no-repeat;
+}
+.explore__menu__item:nth-child(5):before {
+	background: url(img/menu/house-granola.png) 0 0 no-repeat;
+}
+.explore__menu__item:nth-child(6):before {
+	background: url(img/menu/fruit-toast.png) 0 0 no-repeat;
+}
+.explore__menu__item:nth-child(7):before {
+	background: url(img/menu/prufrock-benny.png) 0 0 no-repeat;
+}
+.explore__menu__item:nth-child(8):before {
+	background: url(img/menu/eggs-on-toast.png) 0 0 no-repeat;
+}
+.explore__menu__item:nth-child(9):before {
+	background: url(img/menu/soup.png) 0 0 no-repeat;
+}
+.explore__menu__item:nth-child(10):before {
+	background: url(img/menu/toast.png) 0 0 no-repeat;
+}
+.explore__menu__title {
+	font-size: 16px;
+	line-height: 24px;
+	text-transform: uppercase;
+	grid-area: menu-title;
+}
+.explore__menu__text {
+	font-size: 12px;
+	line-height: 24px;
+	grid-area: menu-text;
+}
+.explore__menu__price {
+	font-size: 16px;
+	line-height: 19px;
+	grid-area: price;
+	text-align: right;
+}
+
+
+
